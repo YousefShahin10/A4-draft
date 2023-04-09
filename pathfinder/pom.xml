@@ -12,20 +12,13 @@
 
   <version>1.0</version>
   <artifactId>2aa4.mesh.pathfinder</artifactId>
-  <name>McMaster :: CAS :: 2AA4 :: A4 :: pathfinder</name>
+  <name>McMaster :: CAS :: 2AA4 :: A2 :: Pathfinder</name>
 
   <dependencies>
     <dependency>
       <groupId>io.github.ace-design</groupId>
       <artifactId>2aa4.mesh.io</artifactId>
       <version>1.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.1</version>
-      <scope>test</scope>
     </dependency>
 
 
@@ -55,6 +48,11 @@
       <artifactId>2aa4.mesh.io</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
     </dependency>
   </dependencies>
 
@@ -123,12 +121,13 @@
             </goals>
             <configuration>
               <sourceFile>${project.build.directory}/${project.artifactId}-jar-with-dependencies.jar</sourceFile>
-              <destinationFile>island.jar</destinationFile>
+              <destinationFile>pathfinder.jar</destinationFile>
             </configuration>
           </execution>
         </executions>
       </plugin>
     </plugins>
   </build>
+
 
 </project>

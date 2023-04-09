@@ -1,6 +1,11 @@
 import java.util.List;
+import java.util.HashMap;
 
 public abstract class GraphADT {
+    protected List<Node> nodes;
+    protected List<Edge> edges;
+    protected HashMap<Node, List<Node>> adjacencyList;
+
     
     public abstract List<Node> getNodes();
 

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ShortestPathAlgorithmTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in ShortestPathAlgorithmTest
+testFindPath(ShortestPathAlgorithmTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[Node@4520ebad, Node@7dc7cbad, Node@d2cc05a, Node@4f933fd1]> but was:<[]>
+	at ShortestPathAlgorithmTest.testFindPath(ShortestPathAlgorithmTest.java:58)
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.047" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.045" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/test-classes:/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/classes:/Users/yousefshahin/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/yousefshahin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
+    <property name="java.class.path" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/test-classes:/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/classes:/Users/yousefshahin/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/yousefshahin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/Users/yousefshahin/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/surefire/surefirebooter9140339503680956120.jar /Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/surefire 2023-04-08T11-18-42_014-jvmRun1 surefire15591333078417854066tmp surefire_06059505373101908028tmp"/>
+    <property name="sun.java.command" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/surefire/surefirebooter2660638623911371494.jar /Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/surefire 2023-04-09T15-28-13_906-jvmRun1 surefire13949068834053389913tmp surefire_06050700940122456594tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/test-classes:/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/classes:/Users/yousefshahin/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/yousefshahin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/test-classes:/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/classes:/Users/yousefshahin/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/yousefshahin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/yousefshahin/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/yousefshahin"/>
     <property name="user.language" value="en"/>
@@ -23,13 +23,13 @@
     <property name="java.version.date" value="2022-10-18"/>
     <property name="java.home" value="/Users/yousefshahin/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io"/>
+    <property name="basedir" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io/target/surefire/surefirebooter9140339503680956120.jar"/>
+    <property name="surefire.real.class.path" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io/target/surefire/surefirebooter2660638623911371494.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/wy/zz1lmdmj3cg3tgcht6p37ft00000gn/T/"/>
     <property name="java.version" value="19.0.1"/>
-    <property name="user.dir" value="/Users/yousefshahin/Documents/2aa4_a3/submitted_assignment/a2---mesh-generator-team-25/io"/>
+    <property name="user.dir" value="/Users/yousefshahin/Documents/2aa4_a4/A4-draft/io"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -57,6 +57,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="writeMeshToFile" classname="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.037"/>
-  <testcase name="writeAndRead" classname="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.002"/>
+  <testcase name="writeMeshToFile" classname="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.035"/>
+  <testcase name="writeAndRead" classname="ca.mcmaster.cas.se2aa4.a2.io.MeshFactoryTest" time="0.003"/>
 </testsuite>
