@@ -65,4 +65,41 @@ public class Graph extends GraphADT{
     public List<Node> getNeighbors(Node node) {
         return adjacencyList.get(node);
     }
+    
+    public double getDistance(Node source, Node dest) {
+        // Use Dijkstra's algorithm to find the shortest path between the source and destination nodes
+        Map<Node, Double> distances = new HashMap<>();
+        PriorityQueue<Node> queue = new PriorityQueue<>(Comparator.comparingDouble(distances::get));
+        queue.add(source);
+        distances.put(source, 0.0);
+
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
+            if (current == dest) {
+                return distances.get(current);
+            }
+
+            for (Node neighbor : adjacencyList.get(current)) {
+                Edge edge = getEdge(current, neighbor);
+                double distance = distances.get(current) + edge.getWeight();
+                if (!distances.containsKey(neighbor) || distance < distances.get(neighbor)) {
+                    distances.put(neighbor, distance);
+                    queue.add(neighbor);
+                }
+            }
+        }
+
+        // If no path is found between the source and destination nodes, return infinity
+        return Double.POSITIVE_INFINITY;
+    }
+
+    // Helper method to get the edge between two nodes
+    private Edge getEdge(Node source, Node dest) {
+        for (Edge edge : edges) {
+            if (edge.getSource().equals(source) && edge.getDestination().equals(dest)) {
+                return edge;
+            }
+        }
+        return null;
+    }
 }
