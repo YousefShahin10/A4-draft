@@ -41,7 +41,7 @@ public class ShortestPathAlgorithm implements PathFinder {
             }
 
             for (Node neighbor : graph.getNeighbors(current)) {
-                double distanceFromCurrent = current.getDistance(neighbor);
+                double distanceFromCurrent = graph.getDistance(current, neighbor);
                 double tentativeDistance = distances.get(current) + distanceFromCurrent;
 
                 if (tentativeDistance < distances.getOrDefault(neighbor, Double.MAX_VALUE)) {
