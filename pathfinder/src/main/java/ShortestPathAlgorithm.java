@@ -8,10 +8,12 @@ import java.util.PriorityQueue;
 public class ShortestPathAlgorithm implements PathFinder {
     private Map<Node, Double> distances;
     private Map<Node, Node> predecessors;
-
-    public ShortestPathAlgorithm() {
+    private Graph graph;
+    
+    public ShortestPathAlgorithm(Graph graph) {
         distances = new HashMap<Node, Double>();
         predecessors = new HashMap<Node, Node>();
+        this.graph = graph;
     }
 
     @Override
@@ -38,7 +40,7 @@ public class ShortestPathAlgorithm implements PathFinder {
                 break;
             }
 
-            for (Node neighbor : current.getNeighbors()) {
+            for (Node neighbor : graph.getNeighbors(current)) {
                 double distanceFromCurrent = current.getDistance(neighbor);
                 double tentativeDistance = distances.get(current) + distanceFromCurrent;
 
