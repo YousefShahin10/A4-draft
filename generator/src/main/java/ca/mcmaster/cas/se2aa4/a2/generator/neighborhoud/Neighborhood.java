@@ -41,9 +41,7 @@ public abstract class Neighborhood {
     protected final Polygon polygonAt(Vertex centroid) {
         return this.registry.get(centroid);
     }
-
-
-
+    
     protected final void register(Polygon p1, Polygon p2) {
         Set<Polygon> p1Neighbors = neighbors.getOrDefault(p1, new HashSet<>());
         p1Neighbors.add(p2);
@@ -56,10 +54,4 @@ public abstract class Neighborhood {
     private void buildRegistry(Set<Polygon> polygons) {
         polygons.forEach(p -> registry.put(p.centroid(), p));
     }
-
-
-
-
-
-
 }

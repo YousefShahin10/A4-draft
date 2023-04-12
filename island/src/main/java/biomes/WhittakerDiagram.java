@@ -37,6 +37,7 @@ public abstract class WhittakerDiagram {
         }
 
         int col = (int)((Math.ceil((mp.getElevation()/100))));
+        //System.out.printf("********************************, %d", col);
 
         if(row > this.diagram[0].length){System.out.println(true);
             col = this.diagram[0].length - 1;

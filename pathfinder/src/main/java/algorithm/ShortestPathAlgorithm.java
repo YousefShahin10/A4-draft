@@ -1,3 +1,9 @@
+package algorithm;
+
+import algorithm.PathFinder;
+import graphComponents.Graph;
+import graphComponents.Node;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -52,7 +58,8 @@ public class ShortestPathAlgorithm implements PathFinder {
                 }
             }
         }
-
+        distances = new HashMap<Node, Double>();
+        predecessors = new HashMap<Node, Node>();
         return path;
     }
 }

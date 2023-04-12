@@ -1,3 +1,6 @@
+import graphComponents.Edge;
+import graphComponents.Graph;
+import graphComponents.Node;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.List;
@@ -8,8 +11,8 @@ public class GraphTest {
     @Test
     public void testAddNode() {
         Graph graph = new Graph();
-        Node node1 = new Node(1, "Node 1", 0.0);
-        Node node2 = new Node(2, "Node 2", 0.0);
+        Node node1 = new Node(1,  0.0);
+        Node node2 = new Node(2, 0.0);
         graph.addNode(node1);
         graph.addNode(node2);
         List<Node> nodes = graph.getNodes();
@@ -20,8 +23,8 @@ public class GraphTest {
     @Test
     public void testRemoveNode() {
         Graph graph = new Graph();
-        Node node1 = new Node(1, "Node 1", 0.0);
-        Node node2 = new Node(2, "Node 2", 0.0);
+        Node node1 = new Node(1,  0.0);
+        Node node2 = new Node(2,  0.0);
         graph.addNode(node1);
         graph.addNode(node2);
         graph.removeNode(node1);
@@ -33,8 +36,8 @@ public class GraphTest {
     @Test
     public void testAddEdge() {
         Graph graph = new Graph();
-        Node node1 = new Node(1, "Node 1", 0.0);
-        Node node2 = new Node(2, "Node 2", 0.0);
+        Node node1 = new Node(1,  0.0);
+        Node node2 = new Node(2,  0.0);
         Edge edge = new Edge(1, node1, node2, 5.0);
         graph.addNode(node1);
         graph.addNode(node2);
@@ -46,8 +49,8 @@ public class GraphTest {
     @Test
     public void testRemoveEdge() {
         Graph graph = new Graph();
-        Node node1 = new Node(1, "Node 1", 0.0);
-        Node node2 = new Node(2, "Node 2", 0.0);
+        Node node1 = new Node(1,  0.0);
+        Node node2 = new Node(2, 0.0);
         Edge edge = new Edge(1, node1, node2, 5.0);
         graph.addNode(node1);
         graph.addNode(node2);
@@ -60,9 +63,9 @@ public class GraphTest {
     @Test
     public void testGetNeighbors() {
         Graph graph = new Graph();
-        Node node1 = new Node(1, "Node 1", 0.0);
-        Node node2 = new Node(2, "Node 2", 0.0);
-        Node node3 = new Node(3, "Node 3", 0.0);
+        Node node1 = new Node(1,  0.0);
+        Node node2 = new Node(2,  0.0);
+        Node node3 = new Node(3,  0.0);
         Edge edge1 = new Edge(1, node1, node2, 5.0);
         Edge edge2 = new Edge(2, node2, node3, 5.0);
         graph.addNode(node1);

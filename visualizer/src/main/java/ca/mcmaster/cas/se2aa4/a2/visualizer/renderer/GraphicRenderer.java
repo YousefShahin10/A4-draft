@@ -1,4 +1,5 @@
 package ca.mcmaster.cas.se2aa4.a2.visualizer.renderer;
+import java.util.*;
 
 import ca.mcmaster.cas.se2aa4.a2.io.Structs;
 import ca.mcmaster.cas.se2aa4.a2.io.Structs.Mesh;
@@ -28,6 +29,7 @@ public class GraphicRenderer implements Renderer {
         canvas.setStroke(stroke);
         drawPolygons(aMesh,canvas);
         drawSegments(aMesh, canvas);
+        drawCentroids(aMesh, canvas);
     }
 
     private void drawPolygons(Mesh aMesh, Graphics2D canvas) {
@@ -40,14 +42,14 @@ public class GraphicRenderer implements Renderer {
     private void drawSegments(Mesh aMesh,Graphics2D canvas){
         List <Segment> segmentList = aMesh.getSegmentsList();
         List <Vertex> vertexList = aMesh.getVerticesList();
-        
+
         for(Segment s : segmentList){
 
             //draw the line
             //Display Segments
             double v1x = vertexList.get(s.getV1Idx()).getX(), v1y = vertexList.get(s.getV1Idx()).getY();
             double v2x = vertexList.get(s.getV2Idx()).getX(), v2y = vertexList.get(s.getV2Idx()).getY();
-            
+
             Optional<Color> fill = new ColorProperty().extract(s.getPropertiesList());
 
             int weight = extractWeight(s.getPropertiesList());
@@ -56,7 +58,7 @@ public class GraphicRenderer implements Renderer {
             canvas.setColor(fill.get());
             Line2D line = new Line2D.Double(new Point2D.Double(v1x, v1y), new Point2D.Double(v2x, v2y));
             canvas.draw(line);
-        }   
+        }
     }
 
     private void drawAPolygon(Structs.Polygon p, Mesh aMesh, Graphics2D canvas) {
@@ -82,7 +84,40 @@ public class GraphicRenderer implements Renderer {
             canvas.setColor(old);
         }
     }
+    private void drawCentroids(Mesh aMesh,Graphics2D canvas){
+        List <Structs.Polygon> polygonList = aMesh.getPolygonsList();
+        List <Vertex> vertexList = aMesh.getVerticesList();
+        List <Vertex> centroidList = new ArrayList<>();
+        for(Structs.Polygon p : polygonList){
+            Vertex c = vertexList.get(p.getCentroidIdx());
 
+            double centroidX = c.getX();
+            double centroidY = c.getY();
+
+            Ellipse2D vertexCircle = new Ellipse2D.Double(centroidX,centroidY,15, 15);
+
+            Optional<Color> fill = new ColorProperty().extract(p.getPropertiesList());
+            Optional<Color> vertexFill = new ColorProperty().extract(c.getPropertiesList());
+            if (vertexFill.get().equals(new Color(92, 43, 62)) || vertexFill.get().equals(new Color(30, 192, 23))){
+                canvas.setColor(vertexFill.get());
+                canvas.fill(vertexCircle);
+                canvas.draw(vertexCircle);
+            }
+            /*if (!fill.get().equals(new Color(0,0,255))) {
+                if (!fill.get().equals(new Color(52, 207, 235))) {
+                    if (!fill.get().equals(new Color(174, 187, 252))) {
+                        if (!fill.get().equals(new Color(102, 237, 255))) {
+                            if (vertexFill.get().equals(new Color(92, 43, 62))){
+                                canvas.setColor(vertexFill.get());
+                                canvas.fill(vertexCircle);
+                                canvas.draw(vertexCircle);
+                            }
+                        }
+                    }
+                }
+            }*/
+        }
+    }
 
     private int extractWeight(List<Property> properties) {
         String val = null;
@@ -93,7 +128,7 @@ public class GraphicRenderer implements Renderer {
         }
         if (val == null)
             return 1;
-        
+
         return Integer.parseInt(val);
     }
 }

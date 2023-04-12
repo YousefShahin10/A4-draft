@@ -1,6 +1,6 @@
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/Edge.java
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/GraphADT.java
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/Node.java
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/Graph.java
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/ShortestPathAlgorithm.java
-/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/PathFinder.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/graphComponents/Node.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/graphComponents/GraphADT.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/graphComponents/Edge.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/algorithm/PathFinder.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/algorithm/ShortestPathAlgorithm.java
+/Users/yousefshahin/Documents/2aa4_a4/A4-draft/pathfinder/src/main/java/graphComponents/Graph.java

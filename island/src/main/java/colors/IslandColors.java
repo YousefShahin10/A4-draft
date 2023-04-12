@@ -17,4 +17,7 @@ public class IslandColors {
     public static final Color BIOME_DESSERT = new Color(252, 252, 53);
     public static final Color BIOME_SUBTROPICAL_DESSERT = new Color(252, 216, 53);
     public static final Color BIOME_TUNDRA = new Color(102, 237, 255);
+
+    public static final Color CITY = new Color(92, 43, 62);
+    public static final Color CAPITAL = new Color(30, 192, 23);
 }

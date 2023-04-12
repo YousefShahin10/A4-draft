@@ -1,6 +1,6 @@
-Graph.class
-Node.class
-GraphADT.class
-PathFinder.class
-ShortestPathAlgorithm.class
-Edge.class
+algorithm/PathFinder.class
+algorithm/ShortestPathAlgorithm.class
+graphComponents/Edge.class
+graphComponents/Graph.class
+graphComponents/Node.class
+graphComponents/GraphADT.class

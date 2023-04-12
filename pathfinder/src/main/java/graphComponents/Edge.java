@@ -1,3 +1,5 @@
+package graphComponents;
+
 public class Edge {
     private int id;
     private Node source;
